@@ -8,22 +8,21 @@
     <title>Form Verification</title>
 </head>
 <body>
-
     <div class="container">
         <div class="header">
             <h2>Create Account</h2>
         </div>
-        <form class="form" id="form">
-            <div class="form-control success">
+        <form class="form" id="form" novalidate>
+            <div class="form-control">
                 <lable>Username</lable>
                 <input type="text" placeholder="Enter Your Name Here" id="username">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
-            <div class="form-control error">
+            <div class="form-control">
                 <lable>Email</lable>
-                <input type="email" placeholder="sanketkawale123@gmail.com" id="email">
+                <input type="email" placeholder="yourname@company.com" id="email">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
@@ -42,7 +41,7 @@
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error message</small>
             </div>
-            <button>Submit</button>
+            <button id="submit-btn">Submit</button>
         </form>
     </div>
     <script src="app.js"></script>
